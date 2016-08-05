@@ -10,7 +10,7 @@ class srv:
         self._p = porta
         self._a = Bottle()
         self._rota()
-        self.estado = 'Desligado'
+        self.estado = '0'
 
     def _rota(self):
         self._a.route('/breaker', callback=self.disjuntor)
